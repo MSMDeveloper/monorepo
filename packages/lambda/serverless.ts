@@ -1,8 +1,9 @@
 import type { AWS } from '@serverless/typescript';
 
-import hello from '@functions/hello';
+import sqsHandler from '@functions/sqs-consumer';
 
 const serverlessConfiguration: AWS = {
+  configValidationMode: "warn",
   service: 'monorepo',
   frameworkVersion: '3',
   plugins: ['serverless-esbuild'],
@@ -19,7 +20,7 @@ const serverlessConfiguration: AWS = {
     },
   },
   // import the function via paths
-  functions: { hello },
+  functions: { sqsHandler },
   package: { individually: true },
   custom: {
     esbuild: {

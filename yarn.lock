@@ -1278,6 +1278,13 @@
   dependencies:
     "@middy/util" "^2.5.7"
 
+"@middy/sqs-json-body-parser@^2.5.7":
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/@middy/sqs-json-body-parser/-/sqs-json-body-parser-2.5.7.tgz#ad87dbeaa1e5177cfb834e1774fa672bffba73ca"
+  integrity sha512-w2DHG667BQtFBr36p699VFhyNdTovfKcUvMT6vTsU2vFmEX7tQmgePvdQr4sP0IRjJAXCn/t8QOpd9FNwMgg3g==
+  dependencies:
+    "@middy/util" "^2.5.7"
+
 "@middy/util@^2.5.7":
   version "2.5.7"
   resolved "https://registry.yarnpkg.com/@middy/util/-/util-2.5.7.tgz#4a08ebb8ec04c3a62ec35007399b675f93119446"

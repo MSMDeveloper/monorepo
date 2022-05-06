@@ -5,14 +5,16 @@
   "main": "serverless.ts",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "sls invoke local --aws-profile default --stage dev --function sqsHandler --path src/functions/sqs-consumer/mock.json"
   },
   "engines": {
     "node": ">=14.15.0"
   },
   "dependencies": {
     "@middy/core": "^2.5.3",
-    "@middy/http-json-body-parser": "^2.5.3"
+    "@middy/http-json-body-parser": "^2.5.3",
+    "@middy/sqs-json-body-parser": "^2.5.7"
   },
   "devDependencies": {
     "@serverless/typescript": "^3.0.0",
