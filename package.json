@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "lerna run test",
+    "test:coverage": "lerna run test:coverage",
     "clean": "lerna run clean --parallel",
     "lint": "eslint ./packages --ext .ts,.tsx"
   },

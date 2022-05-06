@@ -11,6 +11,7 @@
     "build": "tsc -b",
     "clean": "rm -rf ./dist && rm tsconfig.tsbuildinfo",
     "watch": "tsc -b -w --preserveWatchOutput",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   }
 }
