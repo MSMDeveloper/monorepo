@@ -1,9 +1,10 @@
 import type { ValidatedEventSQS } from '@libs/sqs';
 import { middyfy } from '@libs/lambda';
-
-import schema from './schema';
-
-const sqsHandler: ValidatedEventSQS<typeof schema> = async (event) => {
+interface User {
+  name: string;
+  email: string;
+}
+const sqsHandler: ValidatedEventSQS<User> = async (event) => {
   console.log(event.Records[0].body)
 };
 
